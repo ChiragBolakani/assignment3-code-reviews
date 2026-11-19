@@ -3,6 +3,7 @@
 
 import argparse
 from pathlib import Path
+import math
 
 
 SVM_X = ((1, 1), (1, 2), (2, 1), (0, 0), (1, 0), (0, 1))
@@ -71,7 +72,6 @@ def derive_svm_separator():
     Return (weights, bias, geometric_margin), with weights a pair of numbers.
     Explain the derivation and your margin convention in the written report.
     """
-    import math
     # NOTE: for the detailed derivation refer to the write up pdf
     weights = (2.0, 2.0)
     bias = -3.0
